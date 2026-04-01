@@ -1827,13 +1827,20 @@
 
 <script>
 function showTab(idx) {
-  document.querySelectorAll('.tab-content').forEach((el, i) => {
-    el.classList.toggle('active', i === idx);
-  });
-  document.querySelectorAll('.tab-btn').forEach((el, i) => {
-    el.classList.toggle('active', i === idx);
-  });
+  var tabs = document.querySelectorAll('.tab-content');
+  var btns = document.querySelectorAll('.tab-btn');
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].style.display = (i === idx) ? 'block' : 'none';
+    if (i < btns.length) {
+      if (i === idx) {
+        btns[i].classList.add('active');
+      } else {
+        btns[i].classList.remove('active');
+      }
+    }
+  }
 }
+window.onload = function() { showTab(0); };
 </script>
 
 <!-- ===== TAB 6: APPRAISAL / FAIR VALUE SECTION ===== -->
