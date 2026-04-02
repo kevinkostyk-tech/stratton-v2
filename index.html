@@ -2136,6 +2136,7 @@ function showTab(idx) {
 
 <!-- HOME APPRAISAL TAB -->
 <!-- HOME APPRAISAL TAB v2 -->
+<!-- HOME APPRAISAL TAB v2 -->
 <div class="tab-content" id="tab-6" style="display:none">
 <div style="padding:24px;">
 
@@ -2146,15 +2147,15 @@ function showTab(idx) {
       <div style="font-size:0.82rem;color:var(--muted);margin-top:4px;">Primary Residence &middot; HELOC Assessment &middot; Full Custom Rebuild 2022 &middot; C2 Condition &middot; ~5 Acres</div>
     </div>
     <div style="text-align:center;background:rgba(79,142,247,0.1);border:2px solid var(--accent);border-radius:10px;padding:14px 28px;">
-      <div style="font-size:1.8rem;font-weight:900;color:var(--accent);">$1,875,000</div>
-      <div style="font-size:0.68rem;color:var(--muted);text-transform:uppercase;margin-top:2px;">Comp-Based Point Estimate</div>
-      <div style="font-size:0.72rem;color:var(--muted);">Range: $1.75M &ndash; $2.05M</div>
+      <div style="font-size:1.8rem;font-weight:900;color:var(--accent);">$2,030,000</div>
+      <div style="font-size:0.68rem;color:var(--muted);text-transform:uppercase;margin-top:2px;">Comp-Based Point Estimate (Revised)</div>
+      <div style="font-size:0.72rem;color:var(--muted);">Range: $1.90M &ndash; $2.20M</div>
     </div>
   </div>
 
   <!-- Alert -->
   <div class="alert alert-blue" style="margin-bottom:20px;line-height:1.7;">
-    <strong>Sales Comparison Approach &mdash; April 2026.</strong> Based on 4 verified closed sales in Clifton VA 20124 (2024&ndash;2025). Prior cost-approach estimate of $2.7M was based on replacement cost; <strong>actual closed comps reconcile to $1.75M&ndash;$2.05M</strong> after adjustments for the 2022 rebuild, C2 condition, 5-acre lot, and 2,000 sqft finished basement. Clifton is a thin market (&sim;5 large-home sales/year) &mdash; a licensed appraiser using cost approach as secondary may push to $2.1&ndash;2.2M. Budget for $1.875M for HELOC underwriting.
+    <strong>Sales Comparison Approach &mdash; April 2026 (Revised).</strong> Based on 4 verified closed sales in Clifton VA 20124 (2024&ndash;2025). **All comps now reflect estimated or confirmed Above Grade (AG) and Below Grade (BG) square footage.** Prior cost-approach estimate of $2.7M was based on replacement cost; **actual closed comps reconcile to a revised $1.90M&ndash;$2.20M** after adjustments for the 2022 rebuild, C2 condition, 5-acre lot, and 2,000 sqft finished basement. Clifton is a thin market (&sim;5 large-home sales/year) &mdash; a licensed appraiser using cost approach as secondary may push to $2.2&ndash;2.4M. Budget for **$2,030,000** for HELOC underwriting.
   </div>
 
   <!-- Property Details -->
@@ -2192,14 +2193,16 @@ function showTab(idx) {
     <div style="overflow-x:auto;">
     <table>
       <thead>
-        <tr><th>Property</th><th>Sold</th><th>Sale Price</th><th>AG Sqft</th><th>$/sqft</th><th>Beds/Bath</th><th>Yr Built</th><th>Lot</th><th>Adj. Value</th></tr>
+        <tr><th>Property</th><th>Sold</th><th>Sale Price</th><th>AG Sqft</th><th>BG Sqft</th><th>Total Sqft</th><th>$/AG sqft</th><th>Beds/Bath</th><th>Yr Built</th><th>Lot</th><th>Adj. Value</th></tr>
       </thead>
       <tbody>
         <tr class="row-gold">
           <td><strong>SUBJECT: 6705 Briarcroft</strong></td>
           <td>&mdash;</td>
-          <td class="col-gold fw-bold">Est. $1,875,000</td>
-          <td>3,900 AG</td>
+          <td class="col-gold fw-bold">Est. $2,030,000</td>
+          <td>3,900</td>
+          <td>2,000</td>
+          <td>5,900</td>
           <td>&mdash;</td>
           <td>7 / 5</td>
           <td>2022 rebuild</td>
@@ -2211,51 +2214,61 @@ function showTab(idx) {
           <td>Aug 2025</td>
           <td class="col-green fw-bold">$1,750,000</td>
           <td>5,073</td>
+          <td>1,484 (est.)</td>
+          <td>6,557</td>
           <td>$345</td>
           <td>5 / 3.5</td>
-          <td>Pre-2000</td>
-          <td>5+ ac</td>
-          <td class="col-green fw-bold">$1,820&ndash;1,920K</td>
+          <td>1974</td>
+          <td>5.05 ac</td>
+          <td class="col-green fw-bold">$1,980&ndash;2,080K</td>
         </tr>
         <tr>
           <td>5513 Clifton Rd</td>
           <td>Apr 2025</td>
           <td class="col-green fw-bold">$1,450,000</td>
+          <td>4,500 (est.)</td>
+          <td>1,521 (est.)</td>
           <td>6,021</td>
-          <td>$241</td>
+          <td>$322</td>
           <td>7 / 6</td>
           <td>2022</td>
           <td>0.72 ac</td>
-          <td class="col-green fw-bold">$1,744&ndash;1,844K</td>
+          <td class="col-green fw-bold">$1,900&ndash;2,000K</td>
         </tr>
         <tr>
           <td>7007 Clifton Rd</td>
           <td>Jun 2025</td>
           <td class="col-green fw-bold">$1,510,800</td>
+          <td>3,600</td>
+          <td>764</td>
           <td>4,364</td>
-          <td>$346</td>
+          <td>$419</td>
           <td>3 / 2.5</td>
           <td>1975</td>
           <td>10.5 ac</td>
-          <td class="col-green fw-bold">$1,940&ndash;1,990K</td>
+          <td class="col-green fw-bold">$2,050&ndash;2,150K</td>
         </tr>
         <tr>
           <td>13001 Compton Rd</td>
           <td>Mar 2025</td>
           <td class="col-green fw-bold">$1,180,000</td>
+          <td>3,182</td>
+          <td>1,054</td>
           <td>4,236</td>
-          <td>$279</td>
+          <td>$371</td>
           <td>5 / 4.5</td>
           <td>1999</td>
-          <td>1.6 ac</td>
-          <td class="col-green fw-bold">$1,786&ndash;1,836K</td>
+          <td>1.63 ac</td>
+          <td class="col-green fw-bold">$1,950&ndash;2,050K</td>
         </tr>
         <tr class="row-blue">
           <td>6501 Clifton Rd</td>
           <td><span class="badge badge-blue">ACTIVE</span></td>
           <td class="col-blue">$2,500,000</td>
+          <td>4,960 (public)</td>
+          <td>1,528 (est.)</td>
           <td>6,488</td>
-          <td>$385</td>
+          <td>$504 (AG)</td>
           <td>5 / 4.5</td>
           <td>1997</td>
           <td>9.5 ac</td>
@@ -2287,34 +2300,34 @@ function showTab(idx) {
       <tbody>
         <tr>
           <td><strong>Conservative</strong></td>
-          <td>$1,750,000</td>
-          <td>$1,400,000</td>
-          <td>$1,487,500</td>
-          <td class="col-muted">$1,575,000</td>
+          <td>$1,900,000</td>
+          <td>$1,520,000</td>
+          <td>$1,615,000</td>
+          <td class="col-muted">$1,710,000</td>
           <td class="col-muted" style="font-size:0.75rem;">Comp floor &mdash; appraiser anchors on sold data only</td>
         </tr>
         <tr class="row-gold">
           <td><strong>Base Case</strong></td>
-          <td class="col-gold fw-bold">$1,875,000</td>
-          <td class="col-green fw-bold">$1,500,000</td>
-          <td class="col-green fw-bold">$1,593,750</td>
-          <td class="col-muted">$1,687,500</td>
+          <td class="col-gold fw-bold">$2,030,000</td>
+          <td class="col-green fw-bold">$1,624,000</td>
+          <td class="col-green fw-bold">$1,725,500</td>
+          <td class="col-muted">$1,827,000</td>
           <td class="col-muted" style="font-size:0.75rem;">Comp-adjusted point estimate &mdash; most likely</td>
         </tr>
         <tr>
           <td><strong>Optimistic</strong></td>
-          <td>$2,050,000</td>
-          <td>$1,640,000</td>
-          <td>$1,742,500</td>
-          <td class="col-muted">$1,845,000</td>
-          <td class="col-muted" style="font-size:0.75rem;">Comp ceiling + cost approach support</td>
-        </tr>
-        <tr>
-          <td><strong>Cost Approach Upside</strong></td>
           <td>$2,200,000</td>
           <td>$1,760,000</td>
           <td>$1,870,000</td>
           <td class="col-muted">$1,980,000</td>
+          <td class="col-muted" style="font-size:0.75rem;">Comp ceiling + cost approach support</td>
+        </tr>
+        <tr>
+          <td><strong>Cost Approach Upside</strong></td>
+          <td>$2,400,000</td>
+          <td>$1,920,000</td>
+          <td>$2,040,000</td>
+          <td class="col-muted">$2,160,000</td>
           <td class="col-muted" style="font-size:0.75rem;">If appraiser weights replacement cost heavily</td>
         </tr>
       </tbody>
@@ -2324,9 +2337,9 @@ function showTab(idx) {
 
   <!-- HELOC Net Available by Mortgage Balance -->
   <div class="card" style="margin-bottom:20px;">
-    <div class="card-title">Net Available HELOC Line &mdash; Base Case ($1,875,000) at 80% LTV</div>
+    <div class="card-title">Net Available HELOC Line &mdash; Base Case ($2,030,000) at 80% LTV</div>
     <div style="font-size:0.8rem;color:var(--muted);margin-bottom:16px;">
-      Max loan basis at 80% LTV = <strong>$1,500,000</strong>. Subtract your first mortgage balance to get available HELOC credit. Find your row below:
+      Max loan basis at 80% LTV = <strong>$1,624,000</strong>. Subtract your first mortgage balance to get available HELOC credit. Find your row below:
     </div>
     <div style="overflow-x:auto;">
     <table>
@@ -2341,44 +2354,44 @@ function showTab(idx) {
       <tbody>
         <tr>
           <td>$400,000</td>
-          <td class="col-green fw-bold">$1,100,000</td>
-          <td class="col-green fw-bold">$1,193,750</td>
+          <td class="col-green fw-bold">$1,224,000</td>
+          <td class="col-green fw-bold">$1,325,500</td>
           <td style="font-size:0.78rem;color:var(--muted);">Low balance &mdash; max flexibility</td>
         </tr>
         <tr>
           <td>$500,000</td>
-          <td class="col-green fw-bold">$1,000,000</td>
-          <td class="col-green fw-bold">$1,093,750</td>
+          <td class="col-green fw-bold">$1,124,000</td>
+          <td class="col-green fw-bold">$1,225,500</td>
           <td style="font-size:0.78rem;color:var(--muted);">Still strong &mdash; 7-figure HELOC accessible</td>
         </tr>
         <tr class="row-gold">
           <td><strong>$600,000</strong></td>
-          <td class="col-gold fw-bold">$900,000</td>
-          <td class="col-green fw-bold">$993,750</td>
+          <td class="col-gold fw-bold">$1,024,000</td>
+          <td class="col-green fw-bold">$1,125,500</td>
           <td style="font-size:0.78rem;color:var(--muted);">Solid range for ski property down payment</td>
         </tr>
         <tr>
           <td>$700,000</td>
-          <td class="col-green fw-bold">$800,000</td>
-          <td class="col-green fw-bold">$893,750</td>
+          <td class="col-green fw-bold">$924,000</td>
+          <td class="col-green fw-bold">$1,025,500</td>
           <td style="font-size:0.78rem;color:var(--muted);">Still covers full ski property down payment</td>
         </tr>
         <tr>
           <td>$800,000</td>
-          <td class="col-gold fw-bold">$700,000</td>
-          <td class="col-gold fw-bold">$793,750</td>
-          <td style="font-size:0.78rem;color:var(--muted);">Tight but covers 10% down on $870K property</td>
+          <td class="col-gold fw-bold">$824,000</td>
+          <td class="col-gold fw-bold">$925,500</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Covers 10% down on $870K property + buffer</td>
         </tr>
         <tr>
           <td>$900,000</td>
-          <td class="col-gold fw-bold">$600,000</td>
-          <td class="col-gold fw-bold">$693,750</td>
+          <td class="col-gold fw-bold">$724,000</td>
+          <td class="col-gold fw-bold">$825,500</td>
           <td style="font-size:0.78rem;color:var(--muted);">Sufficient for EMD + down payment combo</td>
         </tr>
         <tr>
           <td>$1,000,000</td>
-          <td class="col-red fw-bold">$500,000</td>
-          <td class="col-gold fw-bold">$593,750</td>
+          <td class="col-red fw-bold">$624,000</td>
+          <td class="col-gold fw-bold">$725,500</td>
           <td style="font-size:0.78rem;color:var(--muted);">Minimum for ski deal funding</td>
         </tr>
       </tbody>
@@ -2463,15 +2476,16 @@ function showTab(idx) {
   <div class="card">
     <div class="card-title">Value Reconciliation</div>
     <table style="width:100%;font-size:0.82rem;border-collapse:collapse;">
-      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Comp floor (conservative)</td><td style="padding:8px 0;text-align:right;border-bottom:1px solid var(--border);">$1,750,000</td></tr>
-      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Comp-adjusted midpoint</td><td style="padding:8px 0;font-weight:700;color:var(--accent);text-align:right;border-bottom:1px solid var(--border);">$1,875,000</td></tr>
-      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Comp ceiling</td><td style="padding:8px 0;text-align:right;border-bottom:1px solid var(--border);">$2,050,000</td></tr>
-      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Cost approach upside</td><td style="padding:8px 0;text-align:right;border-bottom:1px solid var(--border);">$2,200,000</td></tr>
-      <tr><td style="padding:8px 0;font-weight:700;color:var(--text);">HELOC underwriting assumption</td><td style="padding:8px 0;font-weight:900;color:var(--accent);text-align:right;font-size:1rem;">$1,875,000</td></tr>
+      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Comp floor (conservative)</td><td style="padding:8px 0;text-align:right;border-bottom:1px solid var(--border);">$1,900,000</td></tr>
+      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Comp-adjusted midpoint</td><td style="padding:8px 0;font-weight:700;color:var(--accent);text-align:right;border-bottom:1px solid var(--border);">$2,030,000</td></tr>
+      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Comp ceiling</td><td style="padding:8px 0;text-align:right;border-bottom:1px solid var(--border);">$2,200,000</td></tr>
+      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Cost approach upside</td><td style="padding:8px 0;text-align:right;border-bottom:1px solid var(--border);">$2,400,000</td></tr>
+      <tr><td style="padding:8px 0;font-weight:700;color:var(--text);">HELOC underwriting assumption</td><td style="padding:8px 0;font-weight:900;color:var(--accent);text-align:right;font-size:1rem;">$2,030,000</td></tr>
     </table>
   </div>
 
 </div>
 </div>
+>
 </body>
 </html>
