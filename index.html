@@ -1837,10 +1837,6 @@ function showTab(idx) {
   for (var j = 0; j < btns.length; j++) {
     btns[j].className = j === idx ? 'tab-btn active' : 'tab-btn';
   }
-});
-  document.querySelectorAll('.tab-btn').forEach((el, i) => {
-    el.classList.toggle('active', i === idx);
-  });
 }
 </script>
 
