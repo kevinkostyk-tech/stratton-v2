@@ -78,8 +78,8 @@
   .tab-btn:hover { color: var(--text); }
   .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
   /* Content */
-  .tab-content { display: none; padding: 24px; max-width: 1200px; margin: 0 auto; }
-  .tab-content.active { display: block; }
+  .tab-content { padding: 24px; max-width: 1200px; margin: 0 auto; }
+  
   /* Cards */
   .card {
     background: var(--card);
@@ -334,7 +334,7 @@
   </div>
 
 <!-- ===== TAB 1: THE PROPERTY ===== -->
-<div class="tab-content active" id="tab-0">
+<div class="tab-content" id="tab-0" style="display:block">
 
   <div class="hero">
     <div class="hero-address">24 Sugarbush Drive</div>
@@ -534,7 +534,7 @@
 </div>
 
 <!-- ===== TAB 2: FINANCIAL MODEL ===== -->
-<div class="tab-content" id="tab-1">
+<div class="tab-content" id="tab-1" style="display:none">
 
   <div class="grid-4" style="margin-bottom:20px;">
     <div class="stat-box">
@@ -905,7 +905,7 @@
 </div>
 
 <!-- ===== TAB 3: OFFER STRATEGY ===== -->
-<div class="tab-content" id="tab-2">
+<div class="tab-content" id="tab-2" style="display:none">
 
   <div class="grid-2">
     <div class="card">
@@ -1176,7 +1176,7 @@
 </div>
 
 <!-- ===== TAB 4: FINANCING & CLOSE ===== -->
-<div class="tab-content" id="tab-3">
+<div class="tab-content" id="tab-3" style="display:none">
 
   <div class="alert alert-red">
     <strong>🚨 Key Action — Do Monday:</strong> There is a derogatory mark on file. Call <strong>Rebecca (VT Mortgage)</strong> and <strong>Heidi (Spruce)</strong> first thing Monday to discuss impact and cure options before making offer commitments.
@@ -1536,7 +1536,7 @@
 </div>
 
 <!-- ===== TAB 5: ROI PROJECTS ===== -->
-<div class="tab-content" id="tab-4">
+<div class="tab-content" id="tab-4" style="display:none">
 
   <div style="padding:0 0 20px 0;max-width:860px;font-size:0.85rem;color:var(--muted);line-height:1.6;">
     Projects revised based on confirmed property details: house comes <strong style="color:var(--text2);">fully furnished</strong>, already has a <strong style="color:var(--text2);">game room</strong>, <strong style="color:var(--text2);">two wood-burning fireplaces</strong>, and a <strong style="color:var(--text2);">ski mudroom</strong>. Capital budget is focused on what actually moves the needle. All items are 5-yr MACRS or 15-yr land improvements — bonus dep eligible.
@@ -1831,20 +1831,15 @@ function showTab(idx) {
   var btns = document.querySelectorAll('.tab-btn');
   for (var i = 0; i < tabs.length; i++) {
     tabs[i].style.display = (i === idx) ? 'block' : 'none';
-    if (i < btns.length) {
-      if (i === idx) {
-        btns[i].classList.add('active');
-      } else {
-        btns[i].classList.remove('active');
-      }
-    }
+  }
+  for (var j = 0; j < btns.length; j++) {
+    btns[j].className = j === idx ? 'tab-btn active' : 'tab-btn';
   }
 }
-window.onload = function() { showTab(0); };
 </script>
 
 <!-- ===== TAB 6: APPRAISAL / FAIR VALUE SECTION ===== -->
-<div class="tab-content" id="tab-5">
+<div class="tab-content" id="tab-5" style="display:none">
 <div style="max-width:100%;padding:0;" id="appraisal-section">
 
   <div style="border-bottom:2px solid var(--accent);padding-bottom:12px;margin-bottom:24px;">
