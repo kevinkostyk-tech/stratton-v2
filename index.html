@@ -2135,103 +2135,345 @@ function showTab(idx) {
 </div>
 
 <!-- HOME APPRAISAL TAB -->
+<!-- HOME APPRAISAL TAB v2 -->
 <div class="tab-content" id="tab-6" style="display:none">
 <div style="padding:24px;">
 
+  <!-- Header -->
   <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
     <div>
       <div style="font-size:1.2rem;font-weight:800;color:var(--text);">6705 Briarcroft St, Clifton VA 20124</div>
-      <div style="font-size:0.82rem;color:var(--muted);margin-top:4px;">Primary Residence &middot; HELOC Assessment &middot; Full Custom Rebuild 2022 &middot; C2 Condition</div>
+      <div style="font-size:0.82rem;color:var(--muted);margin-top:4px;">Primary Residence &middot; HELOC Assessment &middot; Full Custom Rebuild 2022 &middot; C2 Condition &middot; ~5 Acres</div>
     </div>
     <div style="text-align:center;background:rgba(79,142,247,0.1);border:2px solid var(--accent);border-radius:10px;padding:14px 28px;">
-      <div style="font-size:1.8rem;font-weight:900;color:var(--accent);">$2,700,000</div>
-      <div style="font-size:0.68rem;color:var(--muted);text-transform:uppercase;margin-top:2px;">Point Estimate</div>
-      <div style="font-size:0.72rem;color:var(--muted);">Range: $2.60M &ndash; $2.85M</div>
+      <div style="font-size:1.8rem;font-weight:900;color:var(--accent);">$1,875,000</div>
+      <div style="font-size:0.68rem;color:var(--muted);text-transform:uppercase;margin-top:2px;">Comp-Based Point Estimate</div>
+      <div style="font-size:0.72rem;color:var(--muted);">Range: $1.75M &ndash; $2.05M</div>
     </div>
   </div>
 
+  <!-- Alert -->
   <div class="alert alert-blue" style="margin-bottom:20px;line-height:1.7;">
-    <strong>Opinion of Value &mdash; April 2026.</strong> Sales Comparison Approach (primary) + Cost Approach (secondary). The 2022 full custom rebuild makes this effectively new construction. All public data (Zillow, Redfin, Fairfax County) reflects the <em>prior</em> structure &mdash; the prior $850K sale is not a valid comparable and must be excluded.
+    <strong>Sales Comparison Approach &mdash; April 2026.</strong> Based on 4 verified closed sales in Clifton VA 20124 (2024&ndash;2025). Prior cost-approach estimate of $2.7M was based on replacement cost; <strong>actual closed comps reconcile to $1.75M&ndash;$2.05M</strong> after adjustments for the 2022 rebuild, C2 condition, 5-acre lot, and 2,000 sqft finished basement. Clifton is a thin market (&sim;5 large-home sales/year) &mdash; a licensed appraiser using cost approach as secondary may push to $2.1&ndash;2.2M. Budget for $1.875M for HELOC underwriting.
   </div>
 
+  <!-- Property Details -->
   <div class="grid-2" style="margin-bottom:20px;">
     <div class="card">
-      <div class="card-title">Property Details</div>
+      <div class="card-title">Subject Property</div>
       <table style="width:100%;font-size:0.82rem;border-collapse:collapse;">
         <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Address</td><td style="padding:7px 0;font-weight:600;text-align:right;border-bottom:1px solid var(--border);">6705 Briarcroft St, Clifton VA 20124</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Total Finished Area</td><td style="padding:7px 0;font-weight:700;color:var(--accent);text-align:right;border-bottom:1px solid var(--border);">5,900 sqft</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Above Grade GLA</td><td style="padding:7px 0;font-weight:600;text-align:right;border-bottom:1px solid var(--border);">3,900 sqft</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Below Grade Finished</td><td style="padding:7px 0;font-weight:600;text-align:right;border-bottom:1px solid var(--border);">2,000 sqft</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Bedrooms</td><td style="padding:7px 0;font-weight:600;text-align:right;border-bottom:1px solid var(--border);">9 total (6 AG / 3 BG)</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Bathrooms</td><td style="padding:7px 0;font-weight:600;text-align:right;border-bottom:1px solid var(--border);">5 full</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">In-Law Suite</td><td style="padding:7px 0;font-weight:600;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">Yes &mdash; full kitchen</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);">Lot Size</td><td style="padding:7px 0;font-weight:600;text-align:right;">&sim;5 acres, Clifton VA</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Above Grade GLA</td><td style="padding:7px 0;font-weight:700;color:var(--accent);text-align:right;border-bottom:1px solid var(--border);">3,900 sqft</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Below Grade Finished</td><td style="padding:7px 0;font-weight:600;text-align:right;border-bottom:1px solid var(--border);">2,000 sqft (in-law suite)</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Total Finished</td><td style="padding:7px 0;font-weight:700;color:var(--accent);text-align:right;border-bottom:1px solid var(--border);">5,900 sqft</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Bedrooms / Baths</td><td style="padding:7px 0;font-weight:600;text-align:right;border-bottom:1px solid var(--border);">9 bd / 5 ba total</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Effective Year Built</td><td style="padding:7px 0;font-weight:700;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">2022 (full custom rebuild)</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Condition</td><td style="padding:7px 0;font-weight:700;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">C2 &mdash; Excellent</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);">Lot</td><td style="padding:7px 0;font-weight:600;text-align:right;">&sim;5 acres, wooded, private</td></tr>
       </table>
     </div>
     <div class="card">
-      <div class="card-title">Construction &amp; Condition</div>
+      <div class="card-title">Value Drivers &amp; Adjustments</div>
       <table style="width:100%;font-size:0.82rem;border-collapse:collapse;">
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Effective Year Built</td><td style="padding:7px 0;font-weight:700;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">2022 (full custom rebuild)</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Effective Age</td><td style="padding:7px 0;font-weight:600;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">~4 years</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Construction Quality</td><td style="padding:7px 0;font-weight:600;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">Q1&ndash;Q2 (Custom Luxury)</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Condition Rating</td><td style="padding:7px 0;font-weight:700;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">C2 &mdash; Excellent</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Depreciation</td><td style="padding:7px 0;font-weight:600;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">Minimal (~2&ndash;3%)</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Custom Glass</td><td style="padding:7px 0;font-weight:600;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">Large expanses &mdash; est. +$100&ndash;150K</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);">In-Law Suite Premium</td><td style="padding:7px 0;font-weight:600;color:var(--green);text-align:right;">Est. +$40&ndash;60K value</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">2022 Rebuild Premium</td><td style="padding:7px 0;font-weight:600;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">+$150&ndash;200K vs pre-2000 comps</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">C2 Condition vs C3</td><td style="padding:7px 0;font-weight:600;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">+$100&ndash;150K</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">In-Law Suite (2,000 BG sqft)</td><td style="padding:7px 0;font-weight:600;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">+$280&ndash;300K (@ $150/sqft)</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">5-Acre Lot Premium</td><td style="padding:7px 0;font-weight:600;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">+$150&ndash;300K vs &lt;2-acre comps</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Custom Glass / Finishes</td><td style="padding:7px 0;font-weight:600;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">+$100&ndash;150K</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Size Adjustment (3,900 AG)</td><td style="padding:7px 0;font-weight:600;color:var(--red);text-align:right;border-bottom:1px solid var(--border);">-$100&ndash;400K vs larger comps</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);">Market Trend (20124 YoY)</td><td style="padding:7px 0;font-weight:600;color:var(--red);text-align:right;">&minus;5.9% broad market softening</td></tr>
       </table>
     </div>
   </div>
 
+  <!-- Comp Grid -->
   <div class="card" style="margin-bottom:20px;">
-    <div class="card-title">Sales Comparison Approach</div>
+    <div class="card-title">Verified Sold Comps &mdash; Clifton VA 20124 (2024&ndash;2025)</div>
     <div style="overflow-x:auto;">
     <table>
-      <thead><tr><th>Property</th><th>Sale Price</th><th>GLA</th><th>$/sqft</th><th>Condition</th><th>Adjusted Value</th></tr></thead>
+      <thead>
+        <tr><th>Property</th><th>Sold</th><th>Sale Price</th><th>AG Sqft</th><th>$/sqft</th><th>Beds/Bath</th><th>Yr Built</th><th>Lot</th><th>Adj. Value</th></tr>
+      </thead>
       <tbody>
-        <tr class="row-blue"><td><strong>SUBJECT: 6705 Briarcroft</strong></td><td class="col-blue fw-bold">Est. $2,700,000</td><td>3,900 AG / 2,000 BG</td><td>~$460 AG</td><td><span class="badge badge-green">C2</span></td><td>&mdash;</td></tr>
-        <tr><td>6501 Clifton Rd, Clifton VA</td><td>$2,500,000</td><td>6,488 sqft</td><td>$385</td><td>C3</td><td class="col-green fw-bold">$2,650&ndash;2,700K</td></tr>
-        <tr class="row-gold"><td>6500 Briarcroft St, Clifton VA</td><td>$2,999,900</td><td>13,850 sqft</td><td>$217</td><td>C2&ndash;C3</td><td class="col-green fw-bold">$2,500&ndash;2,800K</td></tr>
-        <tr><td>Clifton Luxury Market (Active)</td><td>$2.4M&ndash;$4.75M</td><td>5,000&ndash;16,600</td><td>$280&ndash;$450+</td><td>C2&ndash;C3</td><td class="col-green fw-bold">$2,600&ndash;2,850K</td></tr>
+        <tr class="row-gold">
+          <td><strong>SUBJECT: 6705 Briarcroft</strong></td>
+          <td>&mdash;</td>
+          <td class="col-gold fw-bold">Est. $1,875,000</td>
+          <td>3,900 AG</td>
+          <td>&mdash;</td>
+          <td>9 / 5</td>
+          <td>2022 rebuild</td>
+          <td>~5 ac</td>
+          <td><span class="badge badge-gold">Point Est.</span></td>
+        </tr>
+        <tr>
+          <td>13111 Springdale Estates Rd</td>
+          <td>Aug 2025</td>
+          <td class="col-green fw-bold">$1,750,000</td>
+          <td>5,073</td>
+          <td>$345</td>
+          <td>5 / 3.5</td>
+          <td>Pre-2000</td>
+          <td>5+ ac</td>
+          <td class="col-green fw-bold">$1,820&ndash;1,920K</td>
+        </tr>
+        <tr>
+          <td>5513 Clifton Rd</td>
+          <td>Apr 2025</td>
+          <td class="col-green fw-bold">$1,450,000</td>
+          <td>6,021</td>
+          <td>$241</td>
+          <td>7 / 6</td>
+          <td>2022</td>
+          <td>0.72 ac</td>
+          <td class="col-green fw-bold">$1,744&ndash;1,844K</td>
+        </tr>
+        <tr>
+          <td>7007 Clifton Rd</td>
+          <td>Jun 2025</td>
+          <td class="col-green fw-bold">$1,510,800</td>
+          <td>4,364</td>
+          <td>$346</td>
+          <td>3 / 2.5</td>
+          <td>1975</td>
+          <td>10.5 ac</td>
+          <td class="col-green fw-bold">$1,940&ndash;1,990K</td>
+        </tr>
+        <tr>
+          <td>13001 Compton Rd</td>
+          <td>Mar 2025</td>
+          <td class="col-green fw-bold">$1,180,000</td>
+          <td>4,236</td>
+          <td>$279</td>
+          <td>5 / 4.5</td>
+          <td>1999</td>
+          <td>1.6 ac</td>
+          <td class="col-green fw-bold">$1,786&ndash;1,836K</td>
+        </tr>
+        <tr class="row-blue">
+          <td>6501 Clifton Rd</td>
+          <td><span class="badge badge-blue">ACTIVE</span></td>
+          <td class="col-blue">$2,500,000</td>
+          <td>6,488</td>
+          <td>$385</td>
+          <td>5 / 4.5</td>
+          <td>1997</td>
+          <td>9.5 ac</td>
+          <td class="col-muted">Ceiling ref (sitting)</td>
+        </tr>
       </tbody>
     </table>
     </div>
   </div>
 
+  <!-- HELOC Model -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-title">HELOC Borrowing Model &mdash; 3 Appraisal Scenarios &times; 3 LTV Tiers</div>
+    <div style="font-size:0.8rem;color:var(--muted);margin-bottom:16px;">
+      Subtract your outstanding first mortgage balance from the Max Loan Basis to get your available HELOC line. Most lenders cap total debt (first mortgage + HELOC) at 80&ndash;85% CLTV. Some credit unions / portfolio lenders go to 90%.
+    </div>
+    <div style="overflow-x:auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>Scenario</th>
+          <th>Appraised Value</th>
+          <th>80% LTV Basis</th>
+          <th>85% LTV Basis</th>
+          <th>90% LTV Basis</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Conservative</strong></td>
+          <td>$1,750,000</td>
+          <td>$1,400,000</td>
+          <td>$1,487,500</td>
+          <td class="col-muted">$1,575,000</td>
+          <td class="col-muted" style="font-size:0.75rem;">Comp floor &mdash; appraiser anchors on sold data only</td>
+        </tr>
+        <tr class="row-gold">
+          <td><strong>Base Case</strong></td>
+          <td class="col-gold fw-bold">$1,875,000</td>
+          <td class="col-green fw-bold">$1,500,000</td>
+          <td class="col-green fw-bold">$1,593,750</td>
+          <td class="col-muted">$1,687,500</td>
+          <td class="col-muted" style="font-size:0.75rem;">Comp-adjusted point estimate &mdash; most likely</td>
+        </tr>
+        <tr>
+          <td><strong>Optimistic</strong></td>
+          <td>$2,050,000</td>
+          <td>$1,640,000</td>
+          <td>$1,742,500</td>
+          <td class="col-muted">$1,845,000</td>
+          <td class="col-muted" style="font-size:0.75rem;">Comp ceiling + cost approach support</td>
+        </tr>
+        <tr>
+          <td><strong>Cost Approach Upside</strong></td>
+          <td>$2,200,000</td>
+          <td>$1,760,000</td>
+          <td>$1,870,000</td>
+          <td class="col-muted">$1,980,000</td>
+          <td class="col-muted" style="font-size:0.75rem;">If appraiser weights replacement cost heavily</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- HELOC Net Available by Mortgage Balance -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-title">Net Available HELOC Line &mdash; Base Case ($1,875,000) at 80% LTV</div>
+    <div style="font-size:0.8rem;color:var(--muted);margin-bottom:16px;">
+      Max loan basis at 80% LTV = <strong>$1,500,000</strong>. Subtract your first mortgage balance to get available HELOC credit. Find your row below:
+    </div>
+    <div style="overflow-x:auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>First Mortgage Balance</th>
+          <th>Available HELOC @ 80% LTV</th>
+          <th>Available HELOC @ 85% LTV</th>
+          <th>Use Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>$400,000</td>
+          <td class="col-green fw-bold">$1,100,000</td>
+          <td class="col-green fw-bold">$1,193,750</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Low balance &mdash; max flexibility</td>
+        </tr>
+        <tr>
+          <td>$500,000</td>
+          <td class="col-green fw-bold">$1,000,000</td>
+          <td class="col-green fw-bold">$1,093,750</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Still strong &mdash; 7-figure HELOC accessible</td>
+        </tr>
+        <tr class="row-gold">
+          <td><strong>$600,000</strong></td>
+          <td class="col-gold fw-bold">$900,000</td>
+          <td class="col-green fw-bold">$993,750</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Solid range for ski property down payment</td>
+        </tr>
+        <tr>
+          <td>$700,000</td>
+          <td class="col-green fw-bold">$800,000</td>
+          <td class="col-green fw-bold">$893,750</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Still covers full ski property down payment</td>
+        </tr>
+        <tr>
+          <td>$800,000</td>
+          <td class="col-gold fw-bold">$700,000</td>
+          <td class="col-gold fw-bold">$793,750</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Tight but covers 10% down on $870K property</td>
+        </tr>
+        <tr>
+          <td>$900,000</td>
+          <td class="col-gold fw-bold">$600,000</td>
+          <td class="col-gold fw-bold">$693,750</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Sufficient for EMD + down payment combo</td>
+        </tr>
+        <tr>
+          <td>$1,000,000</td>
+          <td class="col-red fw-bold">$500,000</td>
+          <td class="col-gold fw-bold">$593,750</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Minimum for ski deal funding</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- HELOC for Ski Property -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-title">HELOC Applied to Stratton Acquisition &mdash; 24 Sugarbush Drive</div>
+    <div style="overflow-x:auto;">
+    <table>
+      <thead>
+        <tr><th>Use</th><th>Amount Needed</th><th>HELOC Coverage</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>EMD (earnest money)</td>
+          <td>$20,000</td>
+          <td class="col-green fw-bold">Covered</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Any scenario above</td>
+        </tr>
+        <tr>
+          <td>Down payment (10% on $870K)</td>
+          <td>$87,000</td>
+          <td class="col-green fw-bold">Covered</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Any scenario above</td>
+        </tr>
+        <tr>
+          <td>Closing costs (~4%)</td>
+          <td>~$34,800</td>
+          <td class="col-green fw-bold">Covered</td>
+          <td style="font-size:0.78rem;color:var(--muted);">VT transfer tax + lender fees</td>
+        </tr>
+        <tr class="row-gold">
+          <td><strong>Total Cash to Close</strong></td>
+          <td class="col-gold fw-bold">~$141,800</td>
+          <td class="col-green fw-bold">Fully covered</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Even at conservative mortgage balance</td>
+        </tr>
+        <tr>
+          <td>401k repayment buffer</td>
+          <td>$100,000</td>
+          <td class="col-green fw-bold">Covered</td>
+          <td style="font-size:0.78rem;color:var(--muted);">If using 401k loans as bridge</td>
+        </tr>
+        <tr>
+          <td>Renovation reserve (Y1)</td>
+          <td>$50,000</td>
+          <td class="col-green fw-bold">Covered</td>
+          <td style="font-size:0.78rem;color:var(--muted);">Hot tub, furnishings, upgrades</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- HELOC Tax Note + Caveats -->
   <div class="grid-2" style="margin-bottom:20px;">
     <div class="card">
-      <div class="card-title">Cost Approach</div>
+      <div class="card-title">HELOC Tax Treatment</div>
       <table style="width:100%;font-size:0.82rem;border-collapse:collapse;">
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Above Grade: 3,900 sqft @ $460/sqft</td><td style="padding:7px 0;text-align:right;border-bottom:1px solid var(--border);">$1,794,000</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Below Grade: 2,000 sqft @ $200/sqft</td><td style="padding:7px 0;text-align:right;border-bottom:1px solid var(--border);">$400,000</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Custom Glass + In-Law Premium</td><td style="padding:7px 0;text-align:right;border-bottom:1px solid var(--border);">+$175,000</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Depreciation (~2.5%)</td><td style="padding:7px 0;color:var(--red);text-align:right;border-bottom:1px solid var(--border);">&minus;$59,225</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Land Value (~5 acres)</td><td style="padding:7px 0;text-align:right;border-bottom:1px solid var(--border);">+$350,000&ndash;$500,000</td></tr>
-        <tr><td style="padding:7px 0;font-weight:700;">Cost Approach Indicated Value</td><td style="padding:7px 0;font-weight:800;color:var(--green);text-align:right;">$2,660,000&ndash;$2,810,000</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Interest deductible if used to</td><td style="padding:7px 0;text-align:right;border-bottom:1px solid var(--border);">Buy, build, or improve a home</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Ski property acquisition</td><td style="padding:7px 0;color:var(--green);font-weight:600;text-align:right;border-bottom:1px solid var(--border);">Likely deductible (2nd home)</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Deduction limit (MFJ)</td><td style="padding:7px 0;text-align:right;border-bottom:1px solid var(--border);">$750K combined acquisition debt</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">HELOC rate (current est.)</td><td style="padding:7px 0;color:var(--gold);font-weight:600;text-align:right;border-bottom:1px solid var(--border);">~8.5&ndash;9.5% variable</td></tr>
+        <tr><td style="padding:7px 0;color:var(--muted);">After-tax cost (40.75% rate)</td><td style="padding:7px 0;color:var(--green);font-weight:600;text-align:right;">~5.0&ndash;5.6% effective</td></tr>
       </table>
     </div>
     <div class="card">
-      <div class="card-title">HELOC Capacity</div>
-      <table style="width:100%;font-size:0.82rem;border-collapse:collapse;">
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Estimated Market Value</td><td style="padding:7px 0;font-weight:700;color:var(--green);text-align:right;border-bottom:1px solid var(--border);">$2,700,000</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">80% LTV Max Loan Basis</td><td style="padding:7px 0;text-align:right;border-bottom:1px solid var(--border);">$2,160,000</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">85% LTV Max Loan Basis</td><td style="padding:7px 0;text-align:right;border-bottom:1px solid var(--border);">$2,295,000</td></tr>
-        <tr><td style="padding:7px 0;color:var(--muted);border-bottom:1px solid var(--border);">Less First Mortgage Balance</td><td style="padding:7px 0;color:var(--gold);text-align:right;border-bottom:1px solid var(--border);">Subtract existing balance</td></tr>
-        <tr><td style="padding:7px 0;font-weight:700;">Estimated Available HELOC</td><td style="padding:7px 0;font-weight:700;color:var(--green);text-align:right;">Likely $500K&ndash;$1M+</td></tr>
-      </table>
+      <div class="card-title">Critical Notes for HELOC Appraisal</div>
+      <div style="font-size:0.82rem;line-height:1.7;color:var(--text);">
+        <strong style="color:var(--gold);">1. Brief the appraiser first.</strong> Public records show prior structure. Provide 2022 contractor invoices, permits, and current photos.<br><br>
+        <strong style="color:var(--gold);">2. Prior $850K sale is a comp trap.</strong> Reflects old home &mdash; must be excluded.<br><br>
+        <strong style="color:var(--gold);">3. Thin market risk.</strong> Only ~5 large-home sales/year in Clifton. Appraiser may struggle to find direct comps &mdash; advocate for cost approach as secondary.<br><br>
+        <strong style="color:var(--gold);">4. Shop lenders.</strong> Credit unions and portfolio lenders often go to 85&ndash;90% CLTV vs big banks at 80%.
+      </div>
     </div>
   </div>
 
-  <div class="alert alert-gold" style="line-height:1.8;">
-    <strong>Critical Notes for HELOC Appraisal</strong><br><br>
-    <strong>1. Brief the appraiser before they pull public records.</strong> Zillow, Redfin, and county records show the prior structure. Provide contractor invoices from 2022, current photos, and Fairfax County permit records.<br><br>
-    <strong>2. The prior $850K sale is a comp trap.</strong> Reflects the old structure &mdash; must be excluded entirely.<br><br>
-    <strong>3. Document C2 condition.</strong> Photos of finishes and custom glass justify the quality rating.<br><br>
-    <strong>4. In-law suite documentation.</strong> Confirm permits and egress so the 2,000 BG sqft counts toward finished GLA.<br><br>
-    <strong>5. HELOC math:</strong> At $2.7M value, 80% LTV = $2.16M loan basis. Subtract outstanding first mortgage to get available HELOC line.
+  <!-- Reconciliation -->
+  <div class="card">
+    <div class="card-title">Value Reconciliation</div>
+    <table style="width:100%;font-size:0.82rem;border-collapse:collapse;">
+      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Comp floor (conservative)</td><td style="padding:8px 0;text-align:right;border-bottom:1px solid var(--border);">$1,750,000</td></tr>
+      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Comp-adjusted midpoint</td><td style="padding:8px 0;font-weight:700;color:var(--accent);text-align:right;border-bottom:1px solid var(--border);">$1,875,000</td></tr>
+      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Comp ceiling</td><td style="padding:8px 0;text-align:right;border-bottom:1px solid var(--border);">$2,050,000</td></tr>
+      <tr><td style="padding:8px 0;color:var(--muted);border-bottom:1px solid var(--border);">Cost approach upside</td><td style="padding:8px 0;text-align:right;border-bottom:1px solid var(--border);">$2,200,000</td></tr>
+      <tr><td style="padding:8px 0;font-weight:700;color:var(--text);">HELOC underwriting assumption</td><td style="padding:8px 0;font-weight:900;color:var(--accent);text-align:right;font-size:1rem;">$1,875,000</td></tr>
+    </table>
   </div>
 
 </div>
 </div>
+>
 
 </body>
 </html>
